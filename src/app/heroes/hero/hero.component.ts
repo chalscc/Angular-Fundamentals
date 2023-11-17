@@ -19,4 +19,12 @@ export class HeroComponent {
   getheroDescription(): string {
     return `${this.name} - ${this.age}`;
   }
+
+  changeHero(): void {
+    this.name = 'Spiderman';
+  }
+
+  changeAge(): void {
+    this.age = Math.round(Math.random() * 100);
+  }
 }
