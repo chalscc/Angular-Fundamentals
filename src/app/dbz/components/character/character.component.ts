@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dbz-character',
+  selector: 'dbz-add-character',
   templateUrl: 'character.component.html'
 })
 
