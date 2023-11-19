@@ -19,4 +19,8 @@ export class MainPageComponent {
     power: 7500
   }];
 
+  onNewCharacter(character:Character):void {
+    console.log('main page')
+    console.log(character);
+  }
 }
