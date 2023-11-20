@@ -11,14 +11,15 @@ export class ListComponent {
 
   @Input() // Permite que el padre le pase información al hijo
   public characterList: Character[] = [{
+    id: 'DefaultID',
     name: 'Trunks',
     power: 10,
   }];
 
   @Output()
-  public onDelete: EventEmitter<number> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
-  onDeleteCharacter(index:number):void {
-    this.onDelete.emit(index);
+  onDeleteCharacter(uuid:string):void {
+    this.onDelete.emit(uuid);
   }
 }
